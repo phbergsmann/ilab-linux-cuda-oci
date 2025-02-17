@@ -7,3 +7,5 @@ RUN pip install flash-attn
 RUN pip install 'instructlab[cuda]' \
     -C cmake.args="-DLLAMA_CUDA=on" \
     -C cmake.args="-DLLAMA_NATIVE=off"
+
+RUN pip install vllm==0.7.2

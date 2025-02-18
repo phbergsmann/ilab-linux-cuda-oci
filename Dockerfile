@@ -9,3 +9,5 @@ RUN pip install 'instructlab[cuda]' \
     -C cmake.args="-DLLAMA_NATIVE=off"
 
 RUN pip install vllm==0.7.2 --no-cache-dir
+
+RUN pip install --upgrade numpy --no-cache-dir
